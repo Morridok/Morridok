@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gartic Hiper - Tema Dark</title>
+    <style>
+        /* Reset básico */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; /* Fundo escuro */
+            color: white; /* Texto branco */
+            font-family: 'Arial', sans-serif;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animação de entrada */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container principal */
+        .container {
+            text-align: center;
+            animation: slideUp 2s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Botões de download */
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            animation: pulse 2s infinite;
+            margin: 10px;
+        }
+
+        .button-roxo {
+            background-color: #6f42c1;
+            animation: pulse-roxo 2s infinite;
+        }
+
+        .button-azul {
+            background-color: #1e90ff;
+            animation: pulse-azul 2s infinite;
+        }
+
+        .button-anti-ban {
+            background-color: #ff5722;
+            animation: pulse-anti-ban 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes pulse-roxo {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes pulse-azul {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes pulse-anti-ban {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+        }
+
+        .button-roxo:hover {
+            background-color: #5a3d8e;
+            box-shadow: 0 0 20px rgba(111, 66, 193, 0.5);
+        }
+
+        .button-azul:hover {
+            background-color: #1c7fd9;
+            box-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+        }
+
+        .button-anti-ban:hover {
+            background-color: #e64a19;
+            box-shadow: 0 0 20px rgba(255, 87, 34, 0.5);
+        }
+
+        .button:active, .button-roxo:active, .button-azul:active, .button-anti-ban:active {
+            transform: scale(0.95);
+        }
+
+        /* Texto informativo */
+        .info-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .info-text strong {
+            color: #007bff; /* Destaque em azul */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="https://www.mediafire.com/file/7mu48f6yu5v59r1/Gartic+Hiper+com+Anti+Flood.apk/file" target="_blank">
+            <button class="button">Baixar Gartic Hiper</button>
+        </a>
+        <a href="https://www.mediafire.com/file/8e5fu44eokv8oqm/Gartic+Roxo+com+Anti+Flood.apk/file" target="_blank">
+            <button class="button button-roxo">Baixar Gartic Roxo</button>
+        </a>
+        <a href="https://www.mediafire.com/file/g4es14q2grj5057/Gartic+Azul+com+Anti+Flood.apk/file" target="_blank">
+            <button class="button button-azul">Baixar Gartic Azul</button>
+        </a>
+        <a href="https://www.mediafire.com/file/zxf6qczukpxiqcb/Gartic+com+anti+ban.apk/file" target="_blank">
+            <button class="button button-anti-ban">Baixar Gartic Anti Ban</button>
+        </a>
+
+        <!-- Textos informativos -->
+        <p class="info-text">Agora com suporte para adicionar emojis na bio! 🎉</p>
+        <p class="info-text"><strong>Novidade:</strong> Agora é possível ignorar qualquer usuário apenas clicando na foto de perfil dele pelo chat.</p>
+        <p class="info-text"><strong>Anti-Flood:</strong> Floods rápidos serão ignorados automaticamente.</p>
+    </div>
+
+</body>
+</html>
